@@ -1,0 +1,21 @@
+<mat-card appearance="outlined" class="mt-2 mb-2">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title class="mb-2">
+        Day: {{dayOfMonth}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        <mat-form-field appearance="outline" class="me-2">
+          <mat-label>level zrobiony</mat-label>
+          <mat-select>
+            <mat-option value="one"> not done </mat-option>
+            <mat-option value="two"> mini </mat-option>
+            <mat-option value="three"> medium </mat-option>
+            <mat-option value="four"> elite </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-subtitle>
+      <img class="mb-2" mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>

@@ -3,43 +3,17 @@
 <button class="btn btn-outline-danger">Bootstrap Button</button>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
-
-
   <ng-container matColumnDef="january">
     <th mat-header-cell *matHeaderCellDef> january </th>
     <td mat-cell *matCellDef="let month">
-      <mat-card appearance="outlined" class="mt-2 mb-2">
-        <mat-card-header>
-          <mat-card-title-group>
-            <mat-card-title class="mb-2">
-              Day: {{month.january}}
-            </mat-card-title>
-            <mat-card-subtitle>
-              <mat-form-field appearance="outline" class="me-2">
-                <mat-label>level zrobiony</mat-label>
-                <mat-select>
-                  <mat-option value="one"> mini </mat-option>
-                  <mat-option value="two"> medium </mat-option>
-                  <mat-option value="three"> elite </mat-option>
-                </mat-select>
-              </mat-form-field>
-            </mat-card-subtitle>
-            <img class="mb-2" mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-          </mat-card-title-group>
-        </mat-card-header>
-      </mat-card>
+      <app-habit-board-cell [dayOfMonth]="month.january"></app-habit-board-cell>
     </td>
-
   </ng-container>
 
-  <!-- Name Column -->
   <ng-container matColumnDef="february">
     <th mat-header-cell *matHeaderCellDef> february </th>
     <td mat-cell *matCellDef="let month">
-      {{month.february}}
-      <button mat-flat-button>Basic</button>
+      <app-habit-board-cell [dayOfMonth]="month.february"></app-habit-board-cell>
     </td>
   </ng-container>
 
