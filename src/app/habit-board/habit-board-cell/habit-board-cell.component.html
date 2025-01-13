@@ -6,12 +6,11 @@
       </mat-card-title>
       <mat-card-subtitle>
         <mat-form-field appearance="outline" class="me-2">
-          <mat-label>level zrobiony</mat-label>
-          <mat-select>
-            <mat-option value="one"> not done </mat-option>
-            <mat-option value="two"> mini </mat-option>
-            <mat-option value="three"> medium </mat-option>
-            <mat-option value="four"> elite </mat-option>
+          <mat-label>Wybierz poziom</mat-label>
+          <mat-select [(value)]="selectedLevel">
+            <mat-option *ngFor="let level of levels" [value]="level.value">
+              {{level.viewValue}}
+            </mat-option>
           </mat-select>
         </mat-form-field>
       </mat-card-subtitle>
