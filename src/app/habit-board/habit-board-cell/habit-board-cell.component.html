@@ -5,14 +5,7 @@
         Day: {{dayOfMonth}}
       </mat-card-title>
       <mat-card-subtitle>
-        <mat-form-field appearance="outline" class="me-2">
-          <mat-label>Wybierz poziom</mat-label>
-          <mat-select [(value)]="selectedLevel">
-            <mat-option *ngFor="let level of levels" [value]="level.value">
-              {{level.viewValue}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
+        <app-select-level/>
       </mat-card-subtitle>
       <img class="mb-2" mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
     </mat-card-title-group>
