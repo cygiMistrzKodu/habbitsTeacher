@@ -12,8 +12,8 @@ export interface Month {
 
 const ELEMENT_DATA: Month[] = [
   { january: 1, february: 1, march: 1, april: 1, may: "1 nie ma" },
-  { january: 2, february: 2, march: 0, april: 2, may: "2 V" },
-  { january: 3, february: 3, march: 0, april: 2, may: "3 V" }
+  { january: 2, february: 2, march: 2, april: 2, may: "2 V" },
+  { january: 3, february: 3, march: 3, april: 2, may: "3 V" }
 ];
 
 @Component({

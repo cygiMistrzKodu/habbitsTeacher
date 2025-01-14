@@ -17,10 +17,11 @@
     </td>
   </ng-container>
 
-  <!-- Weight Column -->
   <ng-container matColumnDef="march">
     <th mat-header-cell *matHeaderCellDef> march </th>
-    <td mat-cell *matCellDef="let month"> {{month.march}} </td>
+    <td mat-cell *matCellDef="let month">
+      <app-habit-board-cell [dayOfMonth]="month.march"></app-habit-board-cell>
+    </td>
   </ng-container>
 
   <!-- Symbol Column -->
